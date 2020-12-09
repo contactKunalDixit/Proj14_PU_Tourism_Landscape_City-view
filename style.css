@@ -1,0 +1,64 @@
+@import url("./reset.css");
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400&family=JetBrains+Mono:ital,wght@0,100;0,200;1,100;1,200&family=Noto+Serif+JP:wght@200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+;
+
+
+body {
+    font-family: 'Inria Serif', serif;
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    background-color: aqua;
+
+}
+
+h1,
+h3 {
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    background-color: #eeaa6f;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+
+
+}
+
+.MenuSideBar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 3rem 1rem;
+}
+
+.MainSec {
+    flex: 3;
+    background-image: url("./joshua-earle-X_roZ7toBJY-unsplash\ \(1\).jpg");
+    background-position: center;
+    padding-left: 2rem;
+    padding-top: 3rem;
+}
+
+.NavItems {
+    line-height: 4rem;
+}
