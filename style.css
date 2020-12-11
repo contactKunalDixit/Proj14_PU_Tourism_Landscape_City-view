@@ -25,7 +25,7 @@ body {
     color: white;
     font-size: 2rem;
     background-color: aqua;
-
+    
 }
 
 .col-2 {
@@ -72,6 +72,7 @@ a {
 
 
 
+/* For mobile phones */
 
 @media only screen and (max-width: 768px) {
 
@@ -110,5 +111,5 @@ a {
         cursor: pointer;
     }
 
-    /* For mobile phones: */
+  
 }
