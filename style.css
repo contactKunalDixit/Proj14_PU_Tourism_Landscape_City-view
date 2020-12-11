@@ -12,6 +12,7 @@ body {
     font-family: 'JetBrains Mono', monospace;
     font-family: 'Noto Serif JP', serif;
     font-family: 'Roboto', sans-serif;
+    display: flex;
 }
 
 .container {
@@ -27,13 +28,14 @@ body {
 
 }
 
-.col-2{
+.col-2 {
     font-size: 2.5rem;
 }
 
 
-h1,h3{
-    font-weight:200;
+h1,
+h3 {
+    font-weight: 200;
 }
 
 a {
@@ -42,7 +44,7 @@ a {
     padding: 10px 20px;
     margin: 10px 20px;
     text-align: center;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .MenuSideBar {
@@ -57,7 +59,7 @@ a {
 .MainSec {
     flex: 3;
     background-image: url("./joshua-earle-X_roZ7toBJY-unsplash\ \(1\).jpg");
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 2rem;
@@ -68,26 +70,45 @@ a {
     line-height: 4rem;
 }
 
+
+
+
 @media only screen and (max-width: 768px) {
- 
- .container{
-    font-size: 1.8rem;
- }
 
- .col-2{
-    font-size: 2rem;
-}
+    .container {
+        font-size: 1.8rem;
+        flex-direction: column-reverse;
+    }
 
-a {
-    text-decoration: none;
-    background-color: #eeaa6f;
-    padding: 8px 15px;
-    margin: 10px 15px;
-    text-align: center;
-    font-size:1.5rem;
-    cursor:pointer;
-}
+    .col-1 {
+        height: auto;
+        /* width:100%; */
+    }
 
+    .col-2 {
+
+        min-height: 50vh;
+        font-size: 2rem;
+    }
+
+    .col-1 ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-1 ul li {
+        margin: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: #eeaa6f;
+        padding: 8px 15px;
+        margin: 10px 15px;
+        text-align: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 
     /* For mobile phones: */
 }
